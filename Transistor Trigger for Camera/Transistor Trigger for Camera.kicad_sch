@@ -1528,6 +1528,12 @@
 		(uuid "af663b3f-0590-4c69-816f-7b62fb882b52")
 	)
 	(junction
+		(at 63.5 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "babfe28c-4d25-46a0-86c8-9b4dcc89c211")
+	)
+	(junction
 		(at 41.91 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1587,6 +1593,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 105.41) (xy 63.5 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2157e828-22e3-4ff4-b8da-de7df575207a")
+	)
+	(wire
+		(pts
 			(xy 113.03 57.15) (xy 69.85 57.15)
 		)
 		(stroke
@@ -1617,6 +1633,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 91.44) (xy 63.5 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df7a515-7054-4720-bb79-87138f460b02")
+	)
+	(wire
+		(pts
 			(xy 25.4 78.74) (xy 41.91 78.74)
 		)
 		(stroke
@@ -1627,7 +1653,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 91.44) (xy 74.93 91.44)
+			(xy 60.96 91.44) (xy 63.5 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1724,6 +1750,16 @@
 			(type default)
 		)
 		(uuid "87894f8f-5cbe-4248-aae1-b79c9f573de5")
+	)
+	(wire
+		(pts
+			(xy 63.5 91.44) (xy 74.93 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8828786f-0299-479e-84e0-c9e65387b511")
 	)
 	(wire
 		(pts
@@ -1867,9 +1903,21 @@
 		)
 		(uuid 07374bb3-e992-4c4f-86d9-c66d447e851c)
 	)
+	(rectangle
+		(start 44.45 78.74)
+		(end 68.58 93.98)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 4245932f-a6e0-481c-a04b-f0e4d1afd83d)
+	)
 	(text "Input from Optical Box"
 		(exclude_from_sim no)
-		(at 47.244 90.424 0)
+		(at 56.896 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3069,6 +3117,151 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 63.5 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cebb2a3f-e0e8-4a8f-8558-eaaecd75657e")
+		(property "Reference" "R2"
+			(at 66.04 100.3299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 66.04 102.8699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal"
+			(at 61.722 101.6 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" ""
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f971234f-dc8c-413d-846e-966ea7d303dc")
+		)
+		(pin "2"
+			(uuid "adc429bd-05ce-4afb-86c5-0acb3a4dcc4f")
+		)
+		(instances
+			(project "Transistor Trigger for Camera"
+				(path "/dd946c7e-f666-4bcd-b1d4-6ed21bf15a43"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 63.5 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7fc055e-b01d-43f9-ac14-e02ad4f629e7")
+		(property "Reference" "#PWR07"
+			(at 63.5 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d18fd310-4f12-4260-abf6-ab300f480142")
+		)
+		(instances
+			(project "Transistor Trigger for Camera"
+				(path "/dd946c7e-f666-4bcd-b1d4-6ed21bf15a43"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
 		(at 55.88 91.44 0)
 		(unit 1)
@@ -3078,7 +3271,7 @@
 		(dnp no)
 		(uuid "e1dcc830-4600-43c8-af5b-8c6bbf530031")
 		(property "Reference" "J5"
-			(at 58.928 93.218 0)
+			(at 55.372 81.534 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +3279,7 @@
 			)
 		)
 		(property "Value" "Conn_01x01_Pin"
-			(at 59.69 95.25 0)
+			(at 55.372 84.074 0)
 			(effects
 				(font
 					(size 1.27 1.27)
