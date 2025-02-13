@@ -893,7 +893,7 @@
 				)
 			)
 		)
-		(symbol "Device:C_Polarized"
+		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
 				(offset 0.254)
@@ -910,7 +910,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C_Polarized"
+			(property "Value" "C"
 				(at 0.635 -2.54 0)
 				(effects
 					(font
@@ -937,7 +937,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Polarized capacitor"
+			(property "Description" "Unpolarized capacitor"
 				(at 0 0 0)
 				(effects
 					(font
@@ -955,7 +955,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "CP_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -964,12 +964,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
 					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
@@ -978,41 +979,18 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
-						(width 0)
+						(width 0.508)
 						(type default)
 					)
 					(fill
 						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
-			(symbol "C_Polarized_1_1"
+			(symbol "C_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -2142,6 +2120,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 33.02 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19313ca1-e182-46ae-b65e-27a7fa8d44ad")
+		(property "Reference" "C1"
+			(at 36.83 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 36.83 97.7899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
+			(at 33.9852 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 33.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" ""
+			(at 33.02 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "247ead9f-5c57-4bbe-92d2-7380a073c93d")
+		)
+		(pin "2"
+			(uuid "842e1575-5a70-42f6-bbf7-4c5eb202f7ac")
+		)
+		(instances
+			(project ""
+				(path "/dd946c7e-f666-4bcd-b1d4-6ed21bf15a43"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "2N4401:2N4401")
 		(at 148.59 88.9 0)
 		(unit 1)
@@ -3135,7 +3192,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "22k"
 			(at 66.04 102.8699 0)
 			(effects
 				(font
@@ -3344,7 +3401,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "10"
 			(at 153.67 73.6599 0)
 			(effects
 				(font
@@ -3372,6 +3429,15 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 151.13 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purpose" ""
 			(at 151.13 72.39 0)
 			(effects
 				(font
@@ -3456,85 +3522,6 @@
 			(project ""
 				(path "/dd946c7e-f666-4bcd-b1d4-6ed21bf15a43"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 33.02 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd8d8ee9-f56d-41ab-bf3e-aec955760bc8")
-		(property "Reference" "C1"
-			(at 36.83 94.3609 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 36.83 96.9009 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm"
-			(at 33.9852 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 33.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Polarized capacitor"
-			(at 33.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purpose" ""
-			(at 33.02 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "99b4f95c-451d-4494-b4c2-7c04aa6a6de8")
-		)
-		(pin "1"
-			(uuid "3910eddb-6fad-4cad-b3d2-15575e463da0")
-		)
-		(instances
-			(project ""
-				(path "/dd946c7e-f666-4bcd-b1d4-6ed21bf15a43"
-					(reference "C1")
 					(unit 1)
 				)
 			)
